@@ -1,19 +1,26 @@
 # project-f
 
+##
+
 ## 제안 
 RFP 입수 / 분석
+
 제안서 작성
+
 제출 / PT
+
 수주
+
 또는 사업기획
 
 ## Initialize
 스크럼 팀 구성
-ㅇ
+
 스크럼 환경 구성
-ㅇ
+
 외부 아키텍처 정의 및 구축
-((1)) Cloud그룹에서 표준으로 보유하고 있는 외부 아키텍처 구성 내역 설명 (Cloud Z, zcp 기반)
+
+((1)) 표준 외부 아키텍처 구성 내역 설명
 ((2)) Spring Cloud (Open source 기반)
 Spring Cloud Eureka : https://sabarada.tistory.com/61?category=822738, https://sabarada.tistory.com/62
 Spring Cloud Ribbon : https://sabarada.tistory.com/54?category=822738
