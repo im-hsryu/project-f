@@ -1,24 +1,15 @@
-# project-f
+# O
 
-##
+## O
 
 ## 0000 - 제안 
-RFP 입수 / 분석
-
-제안서 작성
-
-제출 / PT
-
-수주
-
-또는 사업기획
 
 ## 1000 - Initialize
-스크럼 팀 구성
+### 스크럼 팀 구성
 
-스크럼 환경 구성
+### 스크럼 환경 구성
 
-외부 아키텍처 정의 및 구축
+### 외부 아키텍처 정의 및 구축
 
 ((1)) 표준 외부 아키텍처 구성 내역 설명
 
@@ -68,75 +59,24 @@ Kong server에 api 등록
 
 
 
-내부 아키텍처 정의
+### 내부 아키텍처 정의
 
 Application 내부 아키텍처 구성 컨셉 설명 (Layered ~, Hexagonal ~)
 
 서비스 모델링 & 구현에서 실제 구성해보기
 
-개발환경 구축
+### 개발환경 구축
 
-backend / frontend 개발하면서 구축하기
+개인 PC에 환경 구성하고, 설치/설정 결과 확인
 
-Backend 개발 따라하기
-
-Local 환경 구성 : 개인 PC에 환경 구성하고, 설치/설정 결과 확인
-
-사전 준비 : 
-
-JDK, STS, Maven, Lombok, swagger or postman, ...
+JDK, STS, Maven, Lombok, swagger or postman, JUnit, ...
 
 H2DB, MySQL, HeidiSQL 
 
 SonarQube(static analysis), JaCoCo(Test coverage)
 
-Sprint boot Project 생성
 
-Microservice 패키지 구조 생성
-
-Business Logic Layer 구성
-
-Data Access Layer 구성: JPA
-
-Presentation Layer 구성
-
-API 명세, Swagger 설정
-
-API Test
-
-MySQL로 저장소 변경
-
-MariaDB로 저장소 변경
-
-업무 기능 추가
-
-
-
-Frontend 개발 따라하기
-
-React, Vue, Timeleaf
-
-React, Vue 유사함, 비즈니스와 환경에 적합한 것 선택하는 것이 좋음
-
-기존 서비스에서 개선 : Vue, 컴포넌트 재사용과 관리의 수월함, 참고할 개발 레퍼런스가 중요하고 대규모 서비스를 운영 : React 를 선택하는 것이 국내외 개발 블로그와 커뮤니티의 추세임
-
-API 문서화
-
-
-
-
-
-리엑티브 마이크로서비스 개발
-
-논블로킹 동기 API, 이벤트 기반 비동기 서비스
-
-논블로킹 동기 REST API 개발 (스프링으로 하는 
-
-
-
-F
-
-마이크로서비스 도출
+### 마이크로서비스 도출
 
 아키텍처와 마이크로서비스 설계 개요
 
@@ -216,15 +156,17 @@ Release Planning
 
 테스트 계획 수립
 
-데이터 이행 계획 수립
-
-
+(Optional) 데이터 이행 계획 수립
 
 ## 3000 - Executing & Control
 
-마이크로서비스 모델링 & Backend 구현
+### Release Planning
 
-도메인 모델 / 모델링 방법
+### Sprint Planning
+
+### Backend 설계
+
+도메인 모델링 vs 데이터베이스 모델링
 
 Key Concept
 
@@ -236,31 +178,63 @@ Context Map
 
 Service Spec
 
+
+### Backend 구현
+
+Sprint boot Project 생성
+
+Microservice 패키지 구조 생성
+
+Business Logic Layer 구성
+
+Data Access Layer 구성: JPA
+
+Presentation Layer 구성
+
+API 명세/문서화, Swagger 설정
+
+API Test : 리엑티브 마이크로서비스 개발, 논블로킹 동기 API, 이벤트 기반 비동기 서비스, 논블로킹 동기 REST API 개발
+
+MySQL로 저장소 변경
+
+MariaDB로 저장소 변경
+
+업무 기능 추가 후 위의 개발 순서 반복
+
+### UI 설계
+
+### Frontend 구현
+
+React, Vue, Timeleaf
+
+React, Vue 유사함, 비즈니스와 환경에 적합한 것 선택하는 것이 좋음
+
+기존 서비스에서 개선 : Vue, 컴포넌트 재사용과 관리의 수월함, 참고할 개발 레퍼런스가 중요하고 대규모 서비스를 운영 : React 를 선택하는 것이 국내외 개발 블로그와 커뮤니티의 추세임
+
 마이크로서비스 개발 (Backend)
 
 Unit Test
 
+### 지속적 통합 / 지속적 배포
 
+### Sprint 리뷰
 
-UI설계 & Frontend 구현
+### 회고
 
-UI 설계 ....
-
-Frontend 구현 (Timeleaf)
-
-지속적 통합 / 지속적 배포
-
-Sprint 리뷰, 회고, 성과측정/분석
-
-
-
+### 성과측정/분석
 
 ## 4000 - Test & Release
 
-통합 테스트
+### 통합 테스트
 
-성능 테스트
+### 성능 테스트
 
-데이터 이행
+### 데이터 이행
 
-릴리즈
+### 릴리즈
+
+## 운영
+
+### 모니터링
+
+
