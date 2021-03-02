@@ -68,12 +68,15 @@ H2DB, MySQL, HeidiSQL
 
 SonarQube(static analysis), JaCoCo(Test coverage)
 
+개발환경 / 테스트환경 / 운영환경
+
 
 ### 마이크로서비스 도출
 
 아키텍처와 마이크로서비스 설계 개요
 
 목적 / 장점
+~~~
 
 과제
 
@@ -91,17 +94,71 @@ SonarQube(static analysis), JaCoCo(Test coverage)
 
 서비스 당 데이터베이스 - good, 공유 데이터베이스 - refactoring 해야 함
 
+Event Storming Workshop
+Big Picture
+1. Domain Event
+2. External System
+3. Hot Spot
+4. Command
+5. Actor / Role
+6. Sub-Domain
+
+Design Level
+1. Entity / Aggregate
+2. Grouping --> Bounded Context --> Microservice 후보 도출
+3. Transaction / Dependency / MSA 적용 효과 / 운영환경 등 고려
+   (개발 일정, 역량, 운영 환경 고려, As-Is 있는 경우 논리-ERD, 조직 구성 등 추가 고려) Microservice 도출
+4. Microservice 정의
+5. Product Backlog 도출
+
+Service Mapping Diagram
+Client - Microservice - External System
+Communication : API / Event ( sync / async )
+
+Service 분리?
 transaction - eventual persistency, 보상 트랜젝션서비스간 연동
 
-통신
 
-sync
+### Design & Developing microservice
+Domain Modeling
+Key Concept
+Domain Modeling
+Entity / Value object / Standard Type
+Aggregate
 
-async
+준비
+JDK 설치하기 ( openJDK ) : https://adoptopenjdk.net
+STS 설치하기 : https://spring.io/tools
+Lombok 설치하기 ( v1.18.18 ) : https://projectlombok.org/download
+Maven 설치하기 : STS에 기본 설치
+MySQL 설치하기
+HeidiSQL 설치하기
+Spring Boot Project 만들기 : https://start.spring.io
+Add Dependencies
+Spring Web
+Sprint Data JPA
+H2 Database
+Lombok
+Rest Repositories
+Source Code Package 만들기
+package 
+Business Logic Layer  구성하기
+Data Access Layer 구성하기
+Presentation Layer 구성하기
+API 테스트하기
+Database 변경하기 (MySql to MariaDB)
+업무 기능 추가
+Sonarqube
+Install
+Eclipse > Help > Eclipse Marketplace... > "Sonarlint 5.6" 찾아서 > Install
+Show View
+배포
+Docker
+Kubernetes
+운영
+Monitoring
+Auto-Scaling
 
-추가적으로 할 일
-
-Communication : RestAPI, Messaging
 
 CI / CDTest
 
